@@ -14,16 +14,15 @@ struct Constants {
 }
 
 class ViewController: UIViewController {
-    
     @IBOutlet weak var htmlTextView: DCHtmlTextView!
 
     let plainText = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu."
     let boldText = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu..<br /><br /> <p><b>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu.</b></p>"
     let unorderedList = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu.. <br/> <br/> <ul><li>Lorem ipsum</li><li>Lorem ipsum</li><li>Lorem ipsum</li></ul>"
     let orderedList = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu.. <br/> <br/> <ol><li>orem ipsum</li><li>orem ipsum</li><li>orem ipsum</li></ol>"
-    let bulletPoints = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu.<br /><br />Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu:<br /><br />●  Lorem ispum<br />●  Lorem ispum<br />●  Lorem ispum"
+    let bulletPoints = "Lorem ipsum dolor sit er elit lamet.<br /><br />Lorem ipsum dolor, consectetaur cillium pecu:<br /><br />●  Lorem ispum<br />●  Lorem ispum<br />●  Lorem ispum"
     let linkText = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu. <a href='http://www.google.com'>Lorem ispum</a>  <a href='http://www.google.com'>Lorem ispum</a>."
-    let mobileNumber = "Lorem ispum <a href='tel:18002222121'>1800 222 2121</a> or <a href='tel:+6562222121'>(65) 6222 2121</a>(if you are overseas) Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu."
+    let mobileNumber = "Lorem ispum <a href='tel:18002222121'>1800 222 2121</a> or <a href='tel:+6562222121'>(65) 6222 2121</a>(if you are overseas) Lorem ipsum dolor sit er elit lamet."
     override func viewDidLoad() {
         super.viewDidLoad()
         self.displayHTMlSTringInTextView(htmlString: self.plainText)
@@ -34,11 +33,15 @@ class ViewController: UIViewController {
     }
     func addMorenavButton() {
         self.title = "Example"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Constants.infoButtonTitle, style: .plain, target: self, action: #selector(moreButtonTapped) )
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Constants.infoButtonTitle,
+                                                                 style: .plain, target: self,
+                                                                 action: #selector(moreButtonTapped))
         self.navigationItem.rightBarButtonItem?.accessibilityIdentifier = "Info"
     }
     @objc func moreButtonTapped() {
-        let actionSheet = UIAlertController(title: "DCHtmlTextView", message: "Please select action", preferredStyle: .actionSheet)
+        let actionSheet = UIAlertController(title: "DCHtmlTextView",
+                                            message: "Please select action",
+                                            preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Plain text", style: .default, handler: { (_)in
             self.displayHTMlSTringInTextView(htmlString: self.plainText)
         }))
