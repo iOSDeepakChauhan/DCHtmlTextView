@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DCHtmlTextView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DCHtmlTextView.'
+  s.summary          = 'DCHtmlTextView is used to show plain HTML tags in to UITextView'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+DCHtmlTextView will render the Plain HTML tags in to UITextView. Use setHTMLText method and pass Optional strng which contain the html tags.
                        DESC
 
   s.homepage         = 'https://github.com/Deepak/DCHtmlTextView'

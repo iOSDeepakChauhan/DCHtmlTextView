@@ -11,7 +11,7 @@ import UIKit
 
 public class DCHtmlTextView: UITextView {
     /// This method will render the Plain HTML tags in to UITextView
-    /// - Parameter text: Optional strng ehich contain the html tags as string which does not include any styling for example like "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu..<br /><br /> <p><b>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu.</b></p>"
+    /// - Parameter text: Optional strng which contain the html tags as string which does not include any styling for example like "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu..<br /><br /> <p><b>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu.</b></p>"
      public func setHTMLText(text: String?) {
         guard let htmlString = text else {
             return
