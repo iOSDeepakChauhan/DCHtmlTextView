@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DCHtmlTextView_Example' do
+  pod 'DCHtmlTextView', :path => '../'
+
+  target 'DCHtmlTextView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

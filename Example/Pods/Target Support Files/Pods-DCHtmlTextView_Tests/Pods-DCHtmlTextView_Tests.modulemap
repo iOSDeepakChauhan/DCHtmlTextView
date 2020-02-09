@@ -1,0 +1,6 @@
+framework module Pods_DCHtmlTextView_Tests {
+  umbrella header "Pods-DCHtmlTextView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

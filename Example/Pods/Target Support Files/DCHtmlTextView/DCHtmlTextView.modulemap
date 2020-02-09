@@ -1,0 +1,6 @@
+framework module DCHtmlTextView {
+  umbrella header "DCHtmlTextView-umbrella.h"
+
+  export *
+  module * { export * }
+}

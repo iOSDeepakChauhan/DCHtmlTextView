@@ -1,0 +1,16 @@
+PODS:
+  - DCHtmlTextView (0.1.0)
+
+DEPENDENCIES:
+  - DCHtmlTextView (from `../`)
+
+EXTERNAL SOURCES:
+  DCHtmlTextView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DCHtmlTextView: 18fbad78f7ebe3c74bba4e2530a934cad10bb11b
+
+PODFILE CHECKSUM: 3c9c6093c3b8dab20e3a260c32f3e02142a9ea37
+
+COCOAPODS: 1.8.4
