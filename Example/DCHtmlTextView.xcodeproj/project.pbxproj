@@ -29,9 +29,9 @@
 
 /* Begin PBXFileReference section */
 		0D0699CF98138F3CCCA58609 /* Pods_DCHtmlTextView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCHtmlTextView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D65D5D3041890C2ADBFC661 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		230A57940A5FDDC3890C3486 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2446F8C19E9024EF1180ADFD /* DCHtmlTextView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DCHtmlTextView.podspec; path = ../DCHtmlTextView.podspec; sourceTree = "<group>"; };
+		0D65D5D3041890C2ADBFC661 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		230A57940A5FDDC3890C3486 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2446F8C19E9024EF1180ADFD /* DCHtmlTextView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DCHtmlTextView.podspec; path = ../DCHtmlTextView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* DCHtmlTextView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCHtmlTextView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				614BD11D67EA841AE3ABFD6D /* Pods-DCHtmlTextView_Tests.debug.xcconfig */,
 				B03512F0266F18ABCC835DC6 /* Pods-DCHtmlTextView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
